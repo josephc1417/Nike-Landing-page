@@ -1,7 +1,6 @@
 import {
   Hero,
     Services,
-    Nav,
     PopularProducts,
     SuperQuality,
     SpecialOffers,
@@ -9,6 +8,9 @@ import {
     Subscribe,
     Footer,
 } from './sections/index'
+import Nav from './components/Nav'
+
+
 
 const App = () => (
   <main className="relative">
