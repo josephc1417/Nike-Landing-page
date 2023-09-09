@@ -3,14 +3,13 @@ import AiFillStar from "./icon"
 const ShoeCard = ({imgURL,changeBigShoeImage,bigShoeImg}) => {
  
 const handleClick = () => {
-  if (bigShoeImg !== imgURL) {
+  if (bigShoeImg !== imgURL.bigShoe) {
     changeBigShoeImage(imgURL.bigShoe)
   }
 }
 
     return (
-    <div className={`border-2 rounded-xl ${bigShoeImg === imgURL.bigShoe 
-        ? 'border-coral-red' 
+    <div className={`border-2 rounded-xl ${bigShoeImg === imgURL.bigShoe? 'border-coral-red' 
         : 'border-transparent'
         } cursor-pointer max-sm:flex-1
         `}
