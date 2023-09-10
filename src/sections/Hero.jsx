@@ -31,7 +31,7 @@ const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
              )
           })}
          </div>
-         <div className="relative flex sm:gap-6 gap-4 absolute -bottom-[5%] left-[10%] z-30 sm:left-[10%] max-sm px-6">
+         <div className="relative flex sm:gap-6 gap-4 absolute -bottom-[5%] left-[10%] z-30 sm:left-[2%] max-sm sm:px-6 sm:py-6 sm:mt-3">
         {shoes.map((shoe) => {
           return(
             <div key={shoe}>                           
