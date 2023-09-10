@@ -20,7 +20,7 @@ const SuperQuality = () => {
          <p className="mt-6  lg:max-w-lg info-text">
          Our dedication to detail and excellence ensures your satisfaction
          </p>
-         <div className="mt-11">
+         <div className="mt-11 ">
          <Button label="Shop Now" />
          </div>
       </div>
