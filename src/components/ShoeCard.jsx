@@ -1,5 +1,15 @@
-
+/**
+ * A functional component that represents a shoe card.
+ * @param {Object} props - The props passed to the component.
+ * @param {string} props.imgURL - The URL of the shoe image.
+ * @param {function} props.changeBigShoeImage - A function to change the big shoe image.
+ * @param {string} props.bigShoeImg - The URL of the current big shoe image.
+ * @returns The shoe card component.
+*/
 import AiFillStar from "./icon"
+
+
+
 const ShoeCard = ({imgURL,changeBigShoeImage,bigShoeImg}) => {
  
 const handleClick = () => {

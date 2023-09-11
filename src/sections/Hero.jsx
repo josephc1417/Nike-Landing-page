@@ -1,11 +1,15 @@
 import Button from "../components/button"
 import {arrowRight} from '../assets/icons'
 import { shoes,statistics } from "../constants"
-import {bigShoe1} from "../assets/images"
+import {bigShoe1, vid} from "../assets/images"
 import ShoeCard from "../components/ShoeCard"
 import { useState } from "react"
 
 
+/**
+ * Renders the Hero section of the website, displaying the summer collection of Nike shoes.
+ * @returns JSX element representing the Hero section.
+ */
 const Hero = () => {
 const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
   return (
@@ -37,7 +41,7 @@ const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
             <div key={shoe}>                           
               <ShoeCard
               imgURL={shoe}
-              changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+              changeBigShoeImage = {(shoe) => setBigShoeImg(shoe)}
               bigShoeImg={bigShoeImg}/>
             </div>
           )
@@ -46,10 +50,12 @@ const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
       </div>
 
       <div className="relative flex-1 flex justify-center items-center
-            xl:min-h-screen max-xl:py-40  bg-hero bg-cover bg-center rounded-2xl box-shadow:lg"style={{border:'0.7px solid gray '}}>
-        <img src={bigShoeImg} alt="shoe collection" width={610} height={500}
-        className=" bg-background object-contain relative z-10 border-r-orange-600 rounded-lg " />
-      </div>
+      xl:min-h-screen max-xl:py-40  bg-hero bg-cover bg-center rounded-2xl box-shadow:lg"style={{border:'0.7px solid gray '}}>
+      <img className=" bg-background object-contain relative z-[10]
+       border-r-orange-600 rounded-lg" src={bigShoeImg} alt="shoe collection" width={610} height={500}/>
+            
+  
+        </div>
 
       
     </section>

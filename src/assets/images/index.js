@@ -22,10 +22,26 @@ import thumbnailShoe1 from './thumbnail-shoe1.svg'
 import thumbnailShoe2 from './thumbnail-shoe2.svg'
 import thumbnailShoe3 from './thumbnail-shoe3.svg'
 
+import jordan from './jordan.svg'
+import jordanTN from './jordanTN.jpg'
+import ispIMG from './ispaIMG.jpg'
+import ispSVG from './ispSVG.svg'
+import RJimg from './RJimg.jpg'
+import RJsvg from './RJsvg.svg'
+import vid from './vid.mp4'
+
 export {
     bigShoe1,
     bigShoe2,
     bigShoe3,
+    jordan,
+    jordanTN,
+    ispIMG,
+    ispSVG,
+    RJimg,
+    RJsvg,
+    vid,
+    
 
     customer1,
     customer2,
@@ -45,4 +61,6 @@ export {
     thumbnailShoe1,
     thumbnailShoe2,
     thumbnailShoe3
+
+  
 }
