@@ -2,6 +2,12 @@ import { copyrightSign } from "../assets/icons"
 import { footerLogo } from "../assets/images"
 import { footerLinks, socialMedia } from "../constants"
 
+/**
+ * Renders the footer component.
+ * @returns {JSX.Element} - The rendered footer component.
+ */
+
+
 const footer = () => {
   return (
     <footer className="max-container">
@@ -41,10 +47,10 @@ const footer = () => {
           {section.title}
           </h4>
           <ul>
-            {section.links.map((link) => {
+            {section.links.map((link,index) => {
               return(
                 <li className="mt-3 text-white-400 font-montserrat text-base
-                leading-normal hover:text-slate-gray cursor-pointer" key={link.name}>
+                leading-normal hover:text-slate-gray cursor-pointer" key={index}>
                 <a>{link.name}</a>
                 </li>
               )

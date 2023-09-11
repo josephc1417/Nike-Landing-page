@@ -2,6 +2,16 @@ import {headerLogo} from '../assets/images'
 import {hamburger} from '../assets/icons'
 import { navLinks } from '../constants'
 
+/**
+ * Renders a navigation component with a header, logo, and menu items.
+ * @returns The rendered navigation component.
+ */
+
+
+
+
+
+
 
 
 

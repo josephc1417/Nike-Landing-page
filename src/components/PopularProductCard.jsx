@@ -1,4 +1,3 @@
-
 /**
  * Renders a popular product card component.
  * @param {string} imgURL - The URL of the product image.
@@ -6,6 +5,8 @@
  * @param {string} price - The price of the product.
  * @returns The rendered popular product card component.
  */
+
+
 import { star } from "../assets/icons"
 
 

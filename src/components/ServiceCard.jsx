@@ -1,3 +1,11 @@
+/**
+ * Renders a service card component with an image, label, and subtext.
+ * @param {string} imgURL - The URL of the image to display.
+ * @param {string} label - The label text to display.
+ * @param {string} subtext - The subtext to display.
+ * @returns The rendered service card component.
+ */
+
 
 export const ServiceCard = ({imgURL,label ,subtext}) => {
   return (

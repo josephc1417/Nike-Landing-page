@@ -26,9 +26,9 @@ const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
          </p>
          <Button label="Shop Now" iconURL={arrowRight}/>
          <div className="flex justify-starts items-start flex-wrap w-full mt-20 gap-16">
-          {statistics.map((stat) => {
+          {statistics.map((stat,index) => {
              return(
-              <div key={stat.label}>
+              <div key={index}>
                 <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
                 <p className="leading-7 font-montserrat text-slate-gray">{stat.label}</p>
               </div>
@@ -36,9 +36,9 @@ const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
           })}
          </div>
          <div className="relative flex sm:gap-6 gap-4 absolute -bottom-[5%] left-[10%] z-30 sm:left-[2%] max-sm sm:px-6 sm:py-6 sm:mt-3">
-        {shoes.map((shoe) => {
+        {shoes.map((shoe,index) => {
           return(
-            <div key={shoe}>                           
+            <div key={index}>                           
               <ShoeCard
               imgURL={shoe}
               changeBigShoeImage = {(shoe) => setBigShoeImg(shoe)}
